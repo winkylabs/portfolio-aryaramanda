@@ -106,7 +106,7 @@
 
         <p class="description">
 
-            I build modern websites,
+            I build websites,
             create UI/UX designs,
             and make digital illustrations.
 
@@ -114,8 +114,8 @@
 
         <div class="hero-button">
 
-            <a href="#" class="btn-primary">
-                Download CV
+            <a href="#cvModal" class="btn-primary" id="openCv">
+                View CV
             </a>
 
             <a href="#" class="btn-secondary" id="openContact">
@@ -168,7 +168,7 @@
 
             <p>
 
-                I am a passionate Fullstack Developer, Designer,
+                I am a passionate Web Developer, Designer,
                 and Illustrator from Asahan, North Sumatra,
                 Indonesia.
 
@@ -185,7 +185,6 @@
             <div class="about-info">
 
                 <div>
-
                     <strong>Name</strong>
 
                     <span>Arya Ramanda</span>
@@ -204,7 +203,7 @@
 
                     <strong>Email</strong>
 
-                    <span>your@email.com</span>
+                    <span>aryaramandasi@gmail.com</span>
 
                 </div>
 
@@ -212,7 +211,7 @@
 
                     <strong>Career Goal</strong>
 
-                    <span>Creative Fullstack Developer</span>
+                    <span>Web Developer</span>
 
                 </div>
 
@@ -325,7 +324,7 @@
 
     <div class="counter-card">
 
-        <h2 class="number" data-target="5">0</h2>
+        <h2 class="number" data-target="3">0</h2>
 
         <p>Years Experience</p>
 
@@ -333,7 +332,7 @@
 
     <div class="counter-card">
 
-        <h2 class="number" data-target="50">0</h2>
+        <h2 class="number" data-target="20">0</h2>
 
         <p>Designs</p>
 
@@ -341,7 +340,7 @@
 
     <div class="counter-card">
 
-        <h2 class="number" data-target="30">0</h2>
+        <h2 class="number" data-target="100">0</h2>
 
         <p>Illustrations</p>
 
@@ -571,19 +570,17 @@
 
         <div class="project-card web">
 
-            <img src="assets/img/projects/project1.jpg">
+            <img src="assets/img/projects/cover/web-administrasicamatsilaulaut.png" alt="Web administrasi Camat Silau Laut">
 
             <div class="project-content">
 
-                <h3>SPK MOORA</h3>
+                <h3>Sistem Administrasi Camat Silau Laut</h3>
 
                 <p>PHP • MySQL • Bootstrap</p>
 
                 <div class="project-button">
 
-                    <a href="#">Github</a>
-
-                    <a href="#">Demo</a>
+                    <a href="https://e-administrasi-kantorcamatsilaulaut-asahankab.my.id/login.php" target="_blank" rel="noopener noreferrer">Demo</a>
 
                 </div>
 
@@ -595,19 +592,39 @@
 
         <div class="project-card web">
 
-            <img src="assets/img/projects/project2.jpg">
+            <img src="assets/img/projects/cover/web-absensidintankabasahan.png" alt="Web absensi Distan Kabupaten Asahan">
+
+            <div class="project-content">
+
+                <h3>e-Absensi Distan Kabupaten Asahan</h3>
+
+                <p>PHP • MySQL • Bootstrap</p>
+
+                <div class="project-button">
+
+                    <a href="https://e-absensi-honorer-distan-asahankab.my.id/" target="_blank" rel="noopener noreferrer">Demo</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ========================== -->
+
+        <div class="project-card web">
+
+            <img src="assets/img/projects/cover/web-weddinginvitation.png" alt="Web wedding invitation">
 
             <div class="project-content">
 
                 <h3>Wedding Invitation</h3>
 
-                <p>HTML CSS Javascript</p>
+                <p>HTML • CSS • JavaScript</p>
 
                 <div class="project-button">
 
-                    <a href="#">Github</a>
-
-                    <a href="#">Demo</a>
+                    <a href="https://islaajaa04.github.io/wedding-design-bywinkyart/" target="_blank" rel="noopener noreferrer">Demo</a>
 
                 </div>
 
@@ -619,19 +636,13 @@
 
         <div class="project-card design">
 
-            <img src="assets/img/projects/project3.jpg">
+            <img src="assets/img/projects/cover/design-feedritzgym.png" alt="Design feed Ritz Gym">
 
             <div class="project-content">
 
-                <h3>Dashboard UI</h3>
+                <h3>Desain Feed Ritz Gym</h3>
 
-                <p>Figma Canva</p>
-
-                <div class="project-button">
-
-                    <a href="#">Preview</a>
-
-                </div>
+                <p>Canva</p>
 
             </div>
 
@@ -641,13 +652,24 @@
 
         <div class="project-card illustration">
 
-            <img src="assets/img/projects/project4.jpg">
+            <img src="assets/img/projects/cover/illustration-catsummer.png" alt="Cat Summer illustration">
 
             <div class="project-content">
 
-                <h3>Summer Collection</h3>
+                <h3>Cat Summer</h3>
 
-                <p>Ibispaint</p>
+                <p>IbisPaint</p>
+
+                <div class="project-button">
+
+                    <a href="https://www.shutterstock.com/g/winkyart" target="_blank" rel="noopener noreferrer" aria-label="Lihat Winky Art di Shutterstock">
+                        <i class="bi bi-camera-fill" aria-hidden="true"></i> Shutterstock
+                    </a>
+
+                    <a href="https://stock.adobe.com/id/contributor/213415428/Winky%20Art" target="_blank" rel="noopener noreferrer" aria-label="Lihat Winky Art di Adobe Stock">
+                        <i class="bi bi-images" aria-hidden="true"></i> Adobe Stock
+                    </a>
+                </div>
 
             </div>
 
@@ -708,6 +730,35 @@
 
 </section>
 
+<div class="cv-modal" id="cvModal">
+
+    <div class="cv-box">
+
+        <button id="closeCv" aria-label="Tutup CV">
+
+            <i class="bi bi-x-lg" aria-hidden="true"></i>
+
+        </button>
+
+        <h2>Lihat CV</h2>
+
+        <div class="cv-preview">
+
+            <img src="assets/img/gallery/Cv_AryaRamanda.png" alt="CV Arya Ramanda">
+
+        </div>
+
+        <a class="cv-download" href="assets/img/gallery/Cv_AryaRamanda.pdf" download>
+
+            <i class="bi bi-download" aria-hidden="true"></i>
+            Download CV
+
+        </a>
+
+    </div>
+
+</div>
+
 <!-- ========================================
      CONTACT MODAL
      Popup informasi kontak
@@ -729,7 +780,7 @@
 
         <div class="contact-grid">
 
-            <a href="#">
+            <a href="https://www.instagram.com/twentieig?stkn=dTV2bGpvNjh0a2Fq" target="_blank" rel="noopener noreferrer">
 
                 <i class="bi bi-instagram"></i>
 
@@ -737,7 +788,7 @@
 
             </a>
 
-            <a href="#">
+            <a href="https://wa.me/6289679183177" target="_blank" rel="noopener noreferrer">
 
                 <i class="bi bi-whatsapp"></i>
 
@@ -745,7 +796,7 @@
 
             </a>
 
-            <a href="#">
+            <a href="mailto:aryaramandasi@gmail.com">
 
                 <i class="bi bi-envelope"></i>
 
@@ -753,7 +804,7 @@
 
             </a>
 
-            <a href="#">
+            <a href="https://www.linkedin.com/in/arya-ramanda-493a71420?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">
 
                 <i class="bi bi-linkedin"></i>
 
@@ -761,13 +812,7 @@
 
             </a>
 
-            <a href="#">
-
-                <i class="bi bi-threads"></i>
-
-                <span>Threads</span>
-
-            </a>
+            
 
         </div>
 
@@ -789,13 +834,15 @@
 
     <div class="footer-center">
 
-        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.instagram.com/twentieig?stkn=dTV2bGpvNjh0a2Fq" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
 
-        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://wa.me/6289679183177" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
 
-        <a href="#"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/arya-ramanda-493a71420?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
 
-        <a href="#"><i class="bi bi-threads"></i></a>
+      
+
+       
 
     </div>
 

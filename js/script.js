@@ -37,7 +37,7 @@ menu.classList.remove("active");
 ========================================== */
 
 const words = [
-    "Fullstack Developer",
+    "Web Developer",
     "UI/UX Designer",
     "Illustrator"
 ];
@@ -320,6 +320,42 @@ card.style.display="none";
 });
 
 });
+
+/* ==========================================
+   CV MODAL
+========================================== */
+
+const openCv = document.getElementById("openCv");
+const cvModal = document.getElementById("cvModal");
+const closeCv = document.getElementById("closeCv");
+
+if (openCv && cvModal && closeCv) {
+
+    openCv.addEventListener("click",(e)=>{
+
+        e.preventDefault();
+
+        cvModal.classList.add("show");
+
+    });
+
+    closeCv.addEventListener("click",()=>{
+
+        cvModal.classList.remove("show");
+
+    });
+
+    cvModal.addEventListener("click",(e)=>{
+
+        if(e.target===cvModal){
+
+            cvModal.classList.remove("show");
+
+        }
+
+    });
+
+}
 
 /* ==========================================
    CONTACT MODAL

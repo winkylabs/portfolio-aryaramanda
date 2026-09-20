@@ -148,6 +148,24 @@ height:250px;
 
 @media(max-width:576px){
 
+    .project-card.illustration .project-button{
+
+        flex-wrap:nowrap;
+        gap:8px;
+
+    }
+
+    .project-card.illustration .project-button a{
+
+        flex:1 1 0;
+        min-width:0;
+        justify-content:center;
+        padding:9px 6px;
+        font-size:12px;
+        white-space:nowrap;
+
+    }
+
     .counter{
 
         grid-template-columns:1fr;
@@ -241,6 +259,28 @@ height:250px;
         padding:25px 18px;
 
         border-radius:20px;
+
+    }
+
+    .cv-box{
+
+        width:100%;
+        max-width:380px;
+        max-height:90vh;
+        padding:25px 18px;
+        border-radius:20px;
+
+    }
+
+    .cv-box h2{
+
+        font-size:28px;
+
+    }
+
+    .cv-preview img{
+
+        max-height:62vh;
 
     }
 
